@@ -7,7 +7,7 @@ module.exports.profile = function(req, res){
       User.findById(req.cookies.user_id,function(err,user){
           if(user)
           return res.render('user_profile', {
-            title: 'User Profile'
+            title: 'User Pro'
         })
           else
           return res.redirect('/users/sign-in');
